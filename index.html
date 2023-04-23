@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="nav" id="logo">
+            <a href="#"><img src="LinkTree.png" alt="LinkTree Logo" width="250px", height="60px"></a>
+        </div>
+
+        <div class="nav" id="linktree">
+            <h1>My Link Tree</h1>
+        </div>
+
+        <div class="nav" id="hiddenmenu">
+            <i class="fa fa-sharp fa-solid fa-bars" id="hm" onclick=togglehide()></i>
+            <ul id="dropdown_menu">
+                <li class="item" id="item1">My Profile</li>
+                <li class="item" id="item2">Edit Details</li>
+                <li class="item" id="item3">Logout</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="bg">
+
+        <div class="profile">
+            <div class="pf" id="dpimg">
+                <img src="pfp.jpg" alt="pfp" width="100%" height="100%">
+            </div>
+            <div class="pf" id="name">
+                Shubham Asati
+            </div>
+        </div>
+        
+        <div class="treelink">
+            <div id="github" class="links">
+                <a href="https://github.com/ShubhamAsati-123" target="_blank"><h2>Github Link</h2></a>
+            </div>
+
+            <div id="linkedin" class="links">
+                <a href="https://www.linkedin.com/in/shubham-asati-054ba124b/" target="_blank"><h2>Linked In Link</h2></a>
+            </div>
+
+            <div id="insta" class="links">
+                <a href="https://www.instagram.com/shubhamasati2004/" target="_blank"><h2>Instagram Link</h2></a>   
+            </div>
+
+            <div id="telegram" class="links">
+                <a href="https://https://t.me/ShubhamAsati" target="_blank" ><h2>Telegram Link</h2></a>  
+            </div>
+
+            <div id="discord" class="links">
+                <a href="Shubham Asati#8807" target="_blank" ><h2>Discord Link</h2></a>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<script>
+    function togglehide(){
+        let a=document.getElementById('dropdown_menu')
+        if (a.style.display != 'none'){
+            a.style.display = 'none';
+        }
+        else{
+            a.style.display = 'block';
+        }
+    }
+</script>
+</html>

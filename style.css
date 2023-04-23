@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    background: blue;
+    display: grid;
+    grid-template-columns: 2fr 7fr 1fr;
+    height: 75px;
+    gap: 2px;
+    padding: 2px;
+}
+.nav{
+    text-align: center;
+}
+.bg{
+    background: url(Tech\ gif.gif);
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+#linktree{
+    font-size: 30px;
+}
+#dropdown_menu{
+    margin: 10px;
+    background: rgba(0, 191, 255, 0.267);
+    font-size: 20px;
+    position: absolute;
+    text-decoration: none;
+    list-style: none;
+    transform: translate(-80px, 10px);
+    width: 200px;
+	display:none;
+
+}
+.item{
+    margin: 5px;
+    font-size: 30px;
+    color: cyan;
+    border: 2px solid cyan;
+    border-radius: 20px;
+    padding: 5px;
+}
+.item:hover{
+    box-shadow: 0 0 5px 2px cyan;
+
+}
+.profile{
+    display: grid;
+    grid-template-rows: 2;
+    gap: 5px;
+    padding: 5px;
+    align-items: center;
+    justify-content: center;
+    color: aqua;
+}
+.pf{
+    text-align: center;
+}
+#dpimg{
+    margin:1em 0em;
+    height: 200px;
+    width: 300px;
+    text-align: center;
+    border-radius: 150px;
+    overflow: hidden;
+    box-shadow: 0 0 5px 5px rgb(0, 140, 255);
+}
+#name{
+    width: 300px;
+    font-size: 32px;
+    font-weight: bold;
+    text-shadow: 0 0 5px green;
+}
+.treelink{
+    display: grid;
+    grid-template-rows: 5;
+    align-items: center;
+    justify-content: center;
+
+}
+.links{
+    border: 2px solid black;
+    text-align: center;
+    width: 500px;
+    height: 60px;
+    margin: 5px;  
+}
+
+.links a{
+    text-decoration: none;
+    color: black;
+}
+h2{
+    font-size: 45px;   
+}
+#github{
+    background: orange;
+    margin: 5px;
+    
+}
+#discord{
+    background: rgb(58, 58, 240);
+    margin: 5px;
+}
+#linkedin{
+    background: rgb(58, 143, 255);
+    margin: 5px;
+}
+#insta{
+    background: linear-gradient(to right, purple, red, yellow);
+    margin: 5px;
+}
+#telegram{
+    background: rgb(33, 94, 206);
+    margin: 5px;
+}
+#hm{
+    font-size: 60px;
+}
+@media screen and (max-width: 700px) {
+    *{
+        margin: 0;
+        padding: 0;
+        /* display: flex; */
+        /* justify-content: center; */
+        /* align-items: center; */
+    }
+    .container{
+        grid-template-columns: 1fr 1fr;
+        height: 75px;
+        gap: 2px;
+        padding: 2px;
+        justify-content: center;
+        align-items: center;
+    }
+    #linktree{
+        display: none;
+    }
+    .nav{
+        text-align: center;
+    }
+    #dropdown_menu{
+        margin: 10px;
+        background: rgba(0, 191, 255, 0.267);
+        font-size: 20px;
+        position: absolute;
+        text-decoration: none;
+        list-style: none;
+        transform: translate(-80px, 10px);
+        width: 200px;
+        display:none;
+    
+    }
+
+    .profile{
+        display: grid;
+        grid-template-rows: 2;
+        gap: 5px;
+        padding: 5px;
+        align-items: center;
+        justify-content: center;
+        color: aqua;
+    }
+    .pf{
+        text-align: center;
+    }
+    #dpimg{
+        margin:1em 0em;
+        height: 200px;
+        width: 300px;
+        text-align: center;
+        border-radius: 150px;
+        overflow: hidden;
+        box-shadow: 0 0 5px 5px rgb(0, 140, 255);
+    }
+    #name{
+        width: 300px;
+        font-size: 32px;
+        font-weight: bold;
+        text-shadow: 0 0 5px green;
+    }
+    .treelink{
+        display: grid;
+        grid-template-rows: 5;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+    
+    }
+    .links{
+        border: 2px solid black;
+        text-align: center;
+        width: 300px;
+        height: 60px;
+        margin: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+    }
+    h2{
+        font-size: 30px;   
+    }
+}
